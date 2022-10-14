@@ -4,9 +4,7 @@
   "description": "backend server",
   "main": "./src/server.js",
   "scripts": {
-    "prod": "NODE_ENV=production node ./src/server.js",
-    "start": "node ./src/server.ts",
-    "build": "tsc"
+    "start": "node ./src/server.js"
   },
   "author": "",
   "license": "ISC",
