@@ -5,7 +5,7 @@ const server = express();
 server.use(express.json());
 server.use(cors());
 server.options("*", cors());
-const port = 3000;
+const port = process.env.PORT || 3000;
 
 server.use(require("./routes"));
 
