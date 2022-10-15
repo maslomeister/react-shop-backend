@@ -2,10 +2,9 @@
   "name": "backend",
   "version": "1.0.0",
   "description": "backend server",
-  "homepage": "https://maslomeister-shop.herokuapp.com/",
   "main": "./src/server.js",
   "scripts": {
-    "start": "node ./src/server.js"
+    "start": "nodemon ./src/server.js"
   },
   "author": "",
   "license": "ISC",
@@ -21,9 +20,7 @@
   "dependencies": {
     "cors": "^2.8.5",
     "express": "^4.18.1",
-    "node-json-db": "^2.1.3"
-  },
-  "engines": {
-    "node": "16.17.1"
+    "node-json-db": "^2.1.3",
+    "randomstring": "^1.2.2"
   }
 }

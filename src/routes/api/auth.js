@@ -11,7 +11,7 @@ router.get("/", async function (req, res) {
     return res.status(401).json({ error: true, msg: "Неверный токен" });
   }
 
-  return res.status(200).json({ error: false, name: userData.name, userRole: userData.role });
+  return res.status(200).json({ name: userData.name, userRole: userData.role });
 });
 
 router.post("/", async function (req, res) {
@@ -28,7 +28,7 @@ router.post("/", async function (req, res) {
     return res.status(401).json({ error: true, msg: "Неверный логин или пароль" });
   }
 
-  return res.status(200).json({ error: false, authToken: foundUser.authToken, userRole: foundUser.role, name: foundUser.name });
+  return res.status(200).json({ authToken: foundUser.authToken, userRole: foundUser.role, name: foundUser.name });
 });
 
 module.exports = router;
